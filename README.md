@@ -8,8 +8,6 @@ All names in the demo are fictional; included images are neutral placeholders.
 
 ![Retro Feed CSS screenshot](assets/screenshot.png)
 
-Add a screenshot at `assets/screenshot.png` when you are ready to publish the project.
-
 ## Live demo
 
 [Open the GitHub Pages demo](https://YOUR-USERNAME.github.io/retro-facebook-css/)
@@ -134,8 +132,6 @@ Released under the [MIT License](LICENSE).
 ## ภาพตัวอย่าง
 
 ![ภาพหน้าจอ Retro Feed CSS](assets/screenshot.png)
-
-เพิ่มภาพหน้าจอไว้ที่ `assets/screenshot.png` เมื่อต้องการเผยแพร่โปรเจกต์
 
 ## เดโมออนไลน์
 
