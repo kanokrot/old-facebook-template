@@ -1,0 +1,15 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+pakwang.html
+
+# Local previews / generated captures
+*.log
+

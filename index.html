@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A tiny, framework-free retro social feed UI built with HTML, CSS, and vanilla JavaScript.">
+  <title>Retro Feed CSS — a classic social post demo</title>
+  <link rel="stylesheet" href="css/retro-fb.css">
+  <script src="js/demo.js" defer></script>
+</head>
+<body class="rfb-demo">
+  <header class="rfb-demo__header">
+    <div class="rfb-demo__brand">
+      <span class="rfb-demo__mark" aria-hidden="true">rfb</span>
+      <div>
+        <p class="rfb-demo__eyebrow">HTML + CSS + vanilla JS</p>
+        <h1 class="rfb-demo__title">Retro Feed CSS</h1>
+      </div>
+    </div>
+    <p class="rfb-demo__intro">A small collection of familiar, early social-feed post patterns. Made for fun; not affiliated with Facebook or Meta.</p>
+  </header>
+
+  <main class="rfb-demo__main">
+    <section class="rfb-demo__section" aria-labelledby="text-post-heading">
+      <div class="rfb-demo__section-heading">
+        <p class="rfb-demo__eyebrow">01 / Text</p>
+        <h2 id="text-post-heading">Text post</h2>
+      </div>
+      <article class="rfb-post">
+        <header class="rfb-post__header">
+          <!-- To use your own avatar, set its style to: background-image: url('assets/your-avatar.jpg'); -->
+          <img class="rfb-post__avatar" src="assets/avatar-placeholder.svg" alt="" width="48" height="48">
+          <div class="rfb-post__meta">
+            <span class="rfb-post__name">Mali Prasert</span>
+            <p class="rfb-post__time">12 minutes ago <svg class="rfb-post__audience" viewBox="0 0 16 16" role="img" aria-label="Public" title="Public"><circle cx="8" cy="8" r="7" fill="#90949c"/><path d="M2.2 4.8 3 3.3l2-1.1 1.5.5.1 1.1-.9.8-.3 1.5-1.5.4-.6 1.2-1-.3Zm2.4 3.5 1.5.6.4 1.4 1.3 1.3.2 2.1-.8-.2-.7-1.8-1.2-1-.4-1.4-.7-.8Zm3-4.9 1.3-.6 1.5.4 1.4 1 .9 1.5-.9.3-1-.9-1.3-.1-.7-.8-1.2-.1Zm2.1 3.4 1.6-.5 1.5.8.8 1.3-.6 1.4-.2 2-1.1 1.3-.7-1-.1-1.7-.9-1 .3-1.4-.6-.7Z" fill="#fff"/></svg></p>
+          </div>
+        </header>
+        <div class="rfb-post__body">
+          <p>Found a quiet little café on the way home. The rain made the whole afternoon feel slower ☁</p>
+        </div>
+        <div class="rfb-post__actions" aria-label="Post actions">
+          <button class="rfb-post__action" type="button" data-like aria-pressed="false"><span aria-hidden="true">♡</span> <span data-like-label>ถูกใจ</span> <span class="rfb-post__count" data-like-count>8</span></button>
+          <button class="rfb-post__action" type="button" data-comment-toggle aria-expanded="false" aria-controls="text-comments"><span aria-hidden="true">▢</span> แสดงความคิดเห็น</button>
+          <button class="rfb-post__action" type="button" data-share><span aria-hidden="true">↗</span> แชร์</button>
+        </div>
+        <section class="rfb-comments" id="text-comments" hidden aria-label="Comments">
+          <p class="rfb-comments__item"><span class="rfb-comments__name">Niran K.</span> Nice find!</p>
+          <p class="rfb-comments__item"><span class="rfb-comments__name">Pim S.</span> Let's go there this weekend.</p>
+          <p class="rfb-comments__item" data-extra-comment hidden><span class="rfb-comments__name">Mew T.</span> Thanks for sharing!</p>
+          <button class="rfb-comments__more" type="button" data-more-comments>ดูความคิดเห็นเพิ่มเติม</button>
+        </section>
+      </article>
+    </section>
+
+    <section class="rfb-demo__section" aria-labelledby="shared-post-heading">
+      <div class="rfb-demo__section-heading">
+        <p class="rfb-demo__eyebrow">02 / Shared link</p>
+        <h2 id="shared-post-heading">Shared link post</h2>
+      </div>
+      <article class="rfb-post">
+        <header class="rfb-post__header">
+          <img class="rfb-post__avatar" src="assets/avatar-placeholder.svg" alt="" width="48" height="48">
+          <div class="rfb-post__meta">
+            <p class="rfb-post__byline"><span class="rfb-post__name">Arin Chai</span> shared a link with <span class="rfb-post__name">friends</span>.</p>
+            <p class="rfb-post__time">45 minutes ago <svg class="rfb-post__audience" viewBox="0 0 16 16" role="img" aria-label="Public" title="Public"><circle cx="8" cy="8" r="7" fill="#90949c"/><path d="M2.2 4.8 3 3.3l2-1.1 1.5.5.1 1.1-.9.8-.3 1.5-1.5.4-.6 1.2-1-.3Zm2.4 3.5 1.5.6.4 1.4 1.3 1.3.2 2.1-.8-.2-.7-1.8-1.2-1-.4-1.4-.7-.8Zm3-4.9 1.3-.6 1.5.4 1.4 1 .9 1.5-.9.3-1-.9-1.3-.1-.7-.8-1.2-.1Zm2.1 3.4 1.6-.5 1.5.8.8 1.3-.6 1.4-.2 2-1.1 1.3-.7-1-.1-1.7-.9-1 .3-1.4-.6-.7Z" fill="#fff"/></svg></p>
+          </div>
+        </header>
+        <div class="rfb-post__body">
+          <p>Any song recommendations for a lazy afternoon?</p>
+        </div>
+        <a class="rfb-link-preview" href="https://example.com/" aria-label="Open example link">
+          <!-- To use your own thumbnail, set its style to: background-image: url('assets/your-thumbnail.jpg'); -->
+          <img class="rfb-link-preview__image" src="assets/link-placeholder.svg" alt="" width="160" height="160">
+          <span class="rfb-link-preview__content">
+            <span class="rfb-link-preview__title">A Song for a Slow Afternoon</span>
+            <span class="rfb-link-preview__domain">example.com</span>
+          </span>
+        </a>
+        <div class="rfb-post__actions" aria-label="Post actions">
+          <button class="rfb-post__action" type="button" data-like aria-pressed="false"><span aria-hidden="true">♡</span> <span data-like-label>ถูกใจ</span> <span class="rfb-post__count" data-like-count>12</span></button>
+          <button class="rfb-post__action" type="button" data-comment-toggle aria-expanded="false" aria-controls="link-comments"><span aria-hidden="true">▢</span> แสดงความคิดเห็น</button>
+          <button class="rfb-post__action" type="button" data-share><span aria-hidden="true">↗</span> แชร์</button>
+        </div>
+        <section class="rfb-comments" id="link-comments" hidden aria-label="Comments">
+          <p class="rfb-comments__item"><span class="rfb-comments__name">Dao P.</span> This is lovely.</p>
+          <p class="rfb-comments__item"><span class="rfb-comments__name">Ton R.</span> Added it to my playlist.</p>
+          <p class="rfb-comments__item" data-extra-comment hidden><span class="rfb-comments__name">Ploy M.</span> Sending this to a friend.</p>
+          <button class="rfb-comments__more" type="button" data-more-comments>ดูความคิดเห็นเพิ่มเติม</button>
+        </section>
+      </article>
+    </section>
+
+    <section class="rfb-demo__section" aria-labelledby="photo-post-heading">
+      <div class="rfb-demo__section-heading">
+        <p class="rfb-demo__eyebrow">03 / Photo</p>
+        <h2 id="photo-post-heading">Photo post</h2>
+      </div>
+      <article class="rfb-post">
+        <header class="rfb-post__header">
+          <img class="rfb-post__avatar" src="assets/avatar-placeholder.svg" alt="" width="48" height="48">
+          <div class="rfb-post__meta">
+            <span class="rfb-post__name">Kiet W.</span>
+            <p class="rfb-post__time">Yesterday at 6:20 PM <svg class="rfb-post__audience" viewBox="0 0 16 16" role="img" aria-label="Public" title="Public"><circle cx="8" cy="8" r="7" fill="#90949c"/><path d="M2.2 4.8 3 3.3l2-1.1 1.5.5.1 1.1-.9.8-.3 1.5-1.5.4-.6 1.2-1-.3Zm2.4 3.5 1.5.6.4 1.4 1.3 1.3.2 2.1-.8-.2-.7-1.8-1.2-1-.4-1.4-.7-.8Zm3-4.9 1.3-.6 1.5.4 1.4 1 .9 1.5-.9.3-1-.9-1.3-.1-.7-.8-1.2-.1Zm2.1 3.4 1.6-.5 1.5.8.8 1.3-.6 1.4-.2 2-1.1 1.3-.7-1-.1-1.7-.9-1 .3-1.4-.6-.7Z" fill="#fff"/></svg></p>
+          </div>
+        </header>
+        <div class="rfb-post__body">
+          <p>A little color from the weekend walk.</p>
+        </div>
+        <!-- Replace the placeholder SVG with your own image file in assets/. -->
+        <img class="rfb-post__photo" src="assets/photo-placeholder.svg" alt="Abstract placeholder landscape in muted colors" width="720" height="420">
+        <div class="rfb-post__actions" aria-label="Post actions">
+          <button class="rfb-post__action" type="button" data-like aria-pressed="false"><span aria-hidden="true">♡</span> <span data-like-label>ถูกใจ</span> <span class="rfb-post__count" data-like-count>23</span></button>
+          <button class="rfb-post__action" type="button" data-comment-toggle aria-expanded="false" aria-controls="photo-comments"><span aria-hidden="true">▢</span> แสดงความคิดเห็น</button>
+          <button class="rfb-post__action" type="button" data-share><span aria-hidden="true">↗</span> แชร์</button>
+        </div>
+        <section class="rfb-comments" id="photo-comments" hidden aria-label="Comments">
+          <p class="rfb-comments__item"><span class="rfb-comments__name">Fah L.</span> The colors are so nice.</p>
+          <p class="rfb-comments__item" data-extra-comment hidden><span class="rfb-comments__name">Jin P.</span> Lovely weekend light.</p>
+          <button class="rfb-comments__more" type="button" data-more-comments>ดูความคิดเห็นเพิ่มเติม</button>
+        </section>
+      </article>
+    </section>
+
+    <p class="rfb-demo__footer">Use the classes in your own markup. No framework, bundler, or account required.</p>
+  </main>
+</body>
+</html>
