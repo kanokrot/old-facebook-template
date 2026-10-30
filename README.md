@@ -10,9 +10,7 @@ All names in the demo are fictional; included images are neutral placeholders.
 
 ## Live demo
 
-[Open the GitHub Pages demo](https://YOUR-USERNAME.github.io/retro-facebook-css/)
-
-Replace `YOUR-USERNAME` with your GitHub username and enable Pages from the repository's **Settings → Pages**.
+Live demo: not published yet. After pushing this repository, enable GitHub Pages in **Settings → Pages**. Its URL will be `https://kanokrot.github.io/retro-facebook-css/` after replacing `YOUR-USERNAME` with your GitHub username.
 
 ## Quick start
 
@@ -135,9 +133,7 @@ Released under the [MIT License](LICENSE).
 
 ## เดโมออนไลน์
 
-[เปิดเดโม GitHub Pages](https://YOUR-USERNAME.github.io/retro-facebook-css/)
-
-เปลี่ยน `YOUR-USERNAME` เป็นชื่อผู้ใช้ GitHub แล้วเปิด Pages ใน **Settings → Pages** ของ repository
+เดโมออนไลน์: ยังไม่ได้เผยแพร่ หลัง push repository แล้ว ให้เปิด Pages ใน **Settings → Pages** โดย URL จะเป็น `https://YOUR-USERNAME.github.io/retro-facebook-css/` เมื่อเปลี่ยน `YOUR-USERNAME` เป็นชื่อผู้ใช้ GitHub
 
 ## เริ่มใช้งาน
 
