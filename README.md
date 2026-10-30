@@ -8,10 +8,6 @@ All names in the demo are fictional; included images are neutral placeholders.
 
 ![Retro Feed CSS screenshot](assets/screenshot.png)
 
-## Live demo
-
-Live demo: not published yet. After pushing this repository, enable GitHub Pages in **Settings → Pages**. Its URL will be `https://kanokrot.github.io/retro-facebook-css/` after replacing `YOUR-USERNAME` with your GitHub username.
-
 ## Quick start
 
 Open [`index.html`](index.html) directly in a browser. There is no install or build step.
@@ -113,8 +109,6 @@ All component classes use the `rfb-` prefix and BEM-style element names.
 </section>
 ```
 
-For your own images, add files under `assets/` and point the `src` to the file, or set a CSS `background-image: url('assets/your-image.jpg')`. The included placeholders are abstract SVG shapes, not photos.
-
 ## License
 
 Released under the [MIT License](LICENSE).
@@ -130,10 +124,6 @@ Released under the [MIT License](LICENSE).
 ## ภาพตัวอย่าง
 
 ![ภาพหน้าจอ Retro Feed CSS](assets/screenshot.png)
-
-## เดโมออนไลน์
-
-เดโมออนไลน์: ยังไม่ได้เผยแพร่ หลัง push repository แล้ว ให้เปิด Pages ใน **Settings → Pages** โดย URL จะเป็น `https://YOUR-USERNAME.github.io/retro-facebook-css/` เมื่อเปลี่ยน `YOUR-USERNAME` เป็นชื่อผู้ใช้ GitHub
 
 ## เริ่มใช้งาน
 
@@ -235,8 +225,6 @@ Released under the [MIT License](LICENSE).
   <button class="rfb-comments__more" type="button">ดูความคิดเห็นเพิ่มเติม</button>
 </section>
 ```
-
-ใส่รูปของคุณใน `assets/` แล้วกำหนด `src` ไปยังไฟล์นั้น หรือใช้ CSS `background-image: url('assets/your-image.jpg')` ได้ ไฟล์ placeholder ที่ให้มาเป็น SVG รูปทรงนามธรรม ไม่ใช่ภาพถ่าย
 
 ## สัญญาอนุญาต
 
